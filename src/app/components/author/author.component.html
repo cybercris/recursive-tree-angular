@@ -1,0 +1,8 @@
+<div *ngIf="user">
+  <img src="assets/avatar.jpg" [alt]="user.username" height="50" width="50" />
+
+  <section>
+    <p id="author-name">{{ user.username }}</p>
+    <p id="post-date">{{ timestamp }}</p>
+  </section>
+</div>

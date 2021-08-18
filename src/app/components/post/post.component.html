@@ -1,0 +1,11 @@
+<main>
+  <h1>{{ post?.title }}</h1>
+
+  <h2>{{ post?.subtitle }}</h2>
+
+  <app-author [user]="post?.author" [timestamp]="post?.timestamp"></app-author>
+
+  <article [innerHTML]="post?.content"></article>
+
+  <app-comments [comments]="post?.comments"></app-comments>
+</main>

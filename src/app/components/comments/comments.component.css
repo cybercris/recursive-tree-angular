@@ -1,0 +1,70 @@
+h2 {
+  color: #000000;
+  font-weight: bold;
+  font-size: 30px;
+
+  margin-bottom: 34px;
+}
+
+section {
+  margin-bottom: 40px;
+  border-left: 3px solid #ff9b52;
+  padding-left: 24px;
+}
+
+section:last-child {
+  margin-bottom: 0 !important;
+}
+
+/* childrenList */
+div > section:first-child {
+  margin: 30px 0;
+}
+
+div > section {
+  margin-bottom: 30px;
+}
+
+.comment-author {
+  color: #017db5;
+  font-weight: normal;
+  font-size: 16px;
+
+  margin-bottom: 14px;
+}
+
+.comment-content {
+  color: #000000;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 36px;
+
+  margin-bottom: 14px;
+}
+
+button {
+  color: #fff;
+  font-weight: bold;
+  font-size: 15px;
+  padding: 12px 20px;
+  border-radius: 4px;
+  border: 0;
+  cursor: pointer;
+}
+
+button:first-child {
+  margin-right: 10px;
+}
+
+button:hover{
+  background-color: #222222;
+  transition: background-color .2s linear;
+}
+
+.btn-share {
+  background-color: #3A5899;
+}
+
+.btn-report {
+  background-color: #cc3300;
+}

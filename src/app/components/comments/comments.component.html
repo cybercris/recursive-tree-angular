@@ -1,0 +1,26 @@
+<h2>Comentários</h2>
+
+<ng-template #recursiveList let-comments>
+  <section *ngFor="let comment of comments">
+    <div class="comment-author">
+      {{ comment.author.username }} - <time>{{ comment.timestamp }}</time>
+    </div>
+
+    <div class="comment-content" [innerText]="comment.content"></div>
+
+    <footer>
+      <button class="btn-share" (click)="onShare(comment.id)">compartilhar</button>
+      <button class="btn-report" (click)="onReport(comment.id)">reportar</button>
+    </footer>
+
+    <div *ngIf="comment.children.length > 0">
+      <ng-container
+        *ngTemplateOutlet="recursiveList; context: { $implicit: comment.children }"
+      ></ng-container>
+    </div>
+  </section>
+</ng-template>
+
+<ng-container
+  *ngTemplateOutlet="recursiveList; context: { $implicit: comments }"
+></ng-container>
