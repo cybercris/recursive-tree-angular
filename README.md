@@ -91,12 +91,12 @@ Faça com que o clique nos botões abra uma janela de alerta (função `window.a
 
 Confira esta lista de tarefas para ajudá-la a dizer se está apta a entregar:
 
-- [ ] Exibição de respostas de comentários como árvore
-- [ ] Implementação de conjunto de testes para a função que transforma a lista de comentários para uma lista de árvores de comentários
-- [ ] Replicação do estilo definido no protótipo visual
-- [ ] Botões de ação de compartilhar e reportar comentário
-- [ ] Todos os conjuntos de teste passam
-- [ ] O compilador do Typescript não indica erros
-- [ ] O linter não indica erros
+- [x] Exibição de respostas de comentários como árvore
+- [x] Implementação de conjunto de testes para a função que transforma a lista de comentários para uma lista de árvores de comentários
+- [x] Replicação do estilo definido no protótipo visual
+- [x] Botões de ação de compartilhar e reportar comentário
+- [x] Todos os conjuntos de teste passam
+- [x] O compilador do Typescript não indica erros
+- [x] O linter não indica erros
 
 Após ter realizado as tarefas, exclua a pasta node_modules(na raiz do projeto) e compacte a pasta do projeto em um arquivo (formato .tar ou .zip). Este arquivo deve ser submetido para análise através deste [link](https://www.dropbox.com/request/qEiESP6aRmMm6M69uRUA), nomeado da seguinte forma: `<seu_nome_completo>_frontend_test.zip`.
